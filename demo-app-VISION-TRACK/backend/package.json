@@ -1,0 +1,30 @@
+{
+  "name": "triage-ai-backend",
+  "version": "1.0.0",
+  "description": "TRIAGE A.I. Backend Service - Node.js Implementation",
+  "main": "simple_backend.js",
+  "scripts": {
+    "start": "node simple_backend.js",
+    "dev": "nodemon simple_backend.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "triage",
+    "ai",
+    "healthcare",
+    "medical",
+    "emergency"
+  ],
+  "author": "TRIAGE A.I. Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

@@ -1,0 +1,16 @@
+# TRIAGE A.I. Backend Environment Configuration
+FLASK_ENV=development
+SECRET_KEY=triage-ai-secret-key-2025-hackathon
+OPENAI_API_KEY=your-openai-api-key-here
+PORT=8081
+DEBUG=True
+
+# Database Configuration
+DATABASE_URL=sqlite:///healthcare_resources.db
+
+# CORS Origins
+ALLOWED_ORIGINS=http://localhost:3000,http://localhost:5173,http://127.0.0.1:5173
+
+# Logging
+LOG_LEVEL=INFO
+LOG_FILE=triage_ai.log
