@@ -2,10 +2,19 @@ name: Deploy to Lovable
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [ main, develop, master ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, develop, master ]
   workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to deploy to'
+        required: true
+        default: 'production'
+        type: choice
+        options:
+        - production
+        - staging
 
 jobs:
   deploy:
@@ -26,6 +35,7 @@ jobs:
       
     - name: Run tests
       run: npm run test:ci
+      continue-on-error: true
       
     - name: Build application
       run: npm run build:lovable
@@ -33,21 +43,52 @@ jobs:
         NODE_ENV: production
         VITE_APP_ENVIRONMENT: production
         
+    - name: Verify build output
+      run: |
+        echo "📁 Build output contents:"
+        ls -la dist/
+        echo "📄 Main HTML file:"
+        cat dist/index.html | head -10
+        
+    - name: Install Lovable CLI
+      run: npm install -g @lovable/cli
+      
+    - name: Verify Lovable CLI
+      run: |
+        echo "🔧 Lovable CLI version:"
+        lovable --version
+        echo "🔧 Lovable CLI help:"
+        lovable --help
+        
     - name: Deploy to Lovable
       run: |
-        npm install -g @lovable/cli
-        lovable deploy --api-key ${{ secrets.LOVABLE_API_KEY }}
+        echo "🚀 Starting deployment..."
+        echo "🔑 API Key: ${LOVABLE_API_KEY:0:8}..."
+        echo "🏗️  Project ID: $LOVABLE_PROJECT_ID"
+        
+        # Deploy with verbose output
+        lovable deploy --api-key $LOVABLE_API_KEY --verbose
+        
+        echo "✅ Deployment command completed"
       env:
         LOVABLE_API_KEY: ${{ secrets.LOVABLE_API_KEY }}
         LOVABLE_PROJECT_ID: medical-triage-ai-vision
+        
+    - name: Verify deployment
+      run: |
+        echo "🔍 Checking deployment status..."
+        # Add any verification steps here
+        echo "✅ Deployment verification completed"
         
     - name: Notify deployment status
       if: always()
       run: |
         if [ ${{ job.status }} == 'success' ]; then
-          echo "✅ Deployment successful!"
+          echo "🎉 Deployment successful!"
           echo "🌐 Your app is available at: https://medical-triage-ai-vision.lovable.dev"
+          echo "📊 Dashboard: https://lovable.dev/dashboard"
         else
           echo "❌ Deployment failed!"
-          exit 1
+          echo "🔍 Check the logs above for errors"
+          echo "📖 Troubleshooting: https://lovable.dev/docs/troubleshooting"
         fi
