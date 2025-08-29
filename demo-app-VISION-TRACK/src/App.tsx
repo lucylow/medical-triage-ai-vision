@@ -10,6 +10,7 @@ import TriageAI from "./components/TriageAI";
 import SimpleTriage from "./components/SimpleTriage";
 import TestComponent from "./components/TestComponent";
 import BasicTest from "./components/BasicTest";
+import LovableIntegration from "./components/LovableIntegration";
 import TriageSymptomInput from "./pages/TriageSymptomInput";
 import TriageChat from "./pages/TriageChat";
 import TriageResults from "./pages/TriageResults";
@@ -36,6 +37,9 @@ const App = () => (
           <Route path="/triage-chat" element={<TriageChat />} />
           <Route path="/triage-results" element={<TriageResults />} />
           <Route path="/triage-resources" element={<TriageResources />} />
+          
+          {/* Lovable Integration Route */}
+          <Route path="/lovable" element={<LovableIntegration />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

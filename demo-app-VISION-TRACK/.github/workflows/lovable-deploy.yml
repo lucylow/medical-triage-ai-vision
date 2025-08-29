@@ -1,0 +1,53 @@
+name: Deploy to Lovable
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Run tests
+      run: npm run test:ci
+      
+    - name: Build application
+      run: npm run build:lovable
+      env:
+        NODE_ENV: production
+        VITE_APP_ENVIRONMENT: production
+        
+    - name: Deploy to Lovable
+      run: |
+        npm install -g @lovable/cli
+        lovable deploy --api-key ${{ secrets.LOVABLE_API_KEY }}
+      env:
+        LOVABLE_API_KEY: ${{ secrets.LOVABLE_API_KEY }}
+        LOVABLE_PROJECT_ID: medical-triage-ai-vision
+        
+    - name: Notify deployment status
+      if: always()
+      run: |
+        if [ ${{ job.status }} == 'success' ]; then
+          echo "✅ Deployment successful!"
+          echo "🌐 Your app is available at: https://medical-triage-ai-vision.lovable.dev"
+        else
+          echo "❌ Deployment failed!"
+          exit 1
+        fi

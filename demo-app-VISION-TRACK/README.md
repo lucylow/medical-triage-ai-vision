@@ -1,4 +1,4 @@
-# 🧬 GreyGuard Trials - Decentralized Clinical Trial Matching
+# 🧬 TRIAGE A.I. - Decentralized Clinical Trial Matching
 
  ![tag:innovationlab](https://img.shields.io/badge/innovationlab-3D8BD3) ![test coverage](https://img.shields.io/badge/test%20coverage-85%25-brightgreen) ![tests passing](https://img.shields.io/badge/tests%20passing-✓%20all%20green-brightgreen)
 
@@ -6,7 +6,7 @@
 
 ## 🎯 Project Overview
 
-GreyGuard Trials is a **first-of-its-kind decentralized clinical trial matching platform** that combines **Fetch.ai autonomous agents** with **Internet Computer Protocol (ICP) blockchain** to create a privacy-preserving, AI-powered healthcare ecosystem. Our platform addresses the critical gap in clinical trial discovery by leveraging cutting-edge Web3 technologies to match patients with relevant trials while maintaining complete data sovereignty.
+TRIAGE A.I. is a **first-of-its-kind decentralized clinical trial matching platform** that combines **Fetch.ai autonomous agents** with **Internet Computer Protocol (ICP) blockchain** to create a privacy-preserving, AI-powered healthcare ecosystem. Our platform addresses the critical gap in clinical trial discovery by leveraging cutting-edge Web3 technologies to match patients with relevant trials while maintaining complete data sovereignty.
 
 ### 🌟 **Key Innovation**
 - **First ICP + Fetch.ai Healthcare Application**: Novel technology combination never seen before
@@ -16,7 +16,8 @@ GreyGuard Trials is a **first-of-its-kind decentralized clinical trial matching 
 
 ## 🚀 **Live Demo & Links**
 
-- **🌐 Live Application**: [GreyGuard Trials App](http://localhost:8086/)
+- **🌐 Live Application**: [TRIAGE A.I. App](http://localhost:8086/)
+- **🌐 Lovable Deployment**: [Medical Triage AI Vision on Lovable](https://medical-triage-ai-vision.lovable.dev)
 - **📱 Demo Video**: [10-Minute Demo Walkthrough](https://youtu.be/demo-video-link)
 - **🏗️ ICP Canister**: [Mainnet Deployment](https://ic0.app)
 - **📊 Pitch Deck**: [Business Presentation](https://pitch-deck-link.com)
@@ -34,6 +35,34 @@ GreyGuard Trials is a **first-of-its-kind decentralized clinical trial matching 
 
 ### **🎯 Innovation Lab Categorization**
 Our Fetch.ai agents are properly categorized under **Innovation Lab** with the required badge above. This ensures proper evaluation and categorization for the hackathon.
+
+## 🚀 **Lovable Deployment**
+
+This application is fully configured for deployment on the [Lovable platform](https://lovable.dev), providing:
+
+- **🌐 Global CDN**: Lightning-fast global content delivery
+- **📊 Component Analytics**: Track component usage and performance
+- **🔍 Component Tagging**: Automatic component discovery and documentation
+- **📈 Performance Monitoring**: Real-time performance metrics and alerts
+- **🔄 Auto-Deployment**: Continuous deployment from your Git repository
+
+### **Quick Deploy to Lovable**
+
+```bash
+# Install Lovable CLI
+npm install -g @lovable/cli
+
+# Deploy using our script
+./deploy-lovable.sh          # Linux/Mac
+deploy-lovable.bat           # Windows
+
+# Or use npm scripts
+npm run deploy:lovable
+```
+
+📖 **Full Deployment Guide**: [LOVABLE_DEPLOYMENT.md](./LOVABLE_DEPLOYMENT.md)
+
+---
 
 ## 🏗️ **Architecture & Technical Implementation**
 
@@ -142,7 +171,7 @@ Our platform implements **Fetch.ai Chat Protocol** through three coordinated aut
 ## 📋 **Detailed Setup & Installation Instructions**
 
 ### **Prerequisites**
-Before setting up GreyGuard Trials, ensure you have the following installed:
+Before setting up TRIAGE A.I., ensure you have the following installed:
 
 - **Node.js** (v18.0.0 or higher)
 - **npm** (v8.0.0 or higher)
@@ -155,8 +184,8 @@ Before setting up GreyGuard Trials, ensure you have the following installed:
 
 #### **1. Clone the Repository**
 ```bash
-git clone https://github.com/lucylow/greyguard-trials-quest.git
-cd greyguard-trials-quest
+git clone https://github.com/lucylow/triage-ai-quest.git
+cd triage-ai-quest
 ```
 
 #### **2. Frontend Setup**
@@ -183,7 +212,7 @@ dfx start --background
 dfx deploy
 
 # Get canister ID
-dfx canister id greyguard_trials
+dfx canister id triage_ai
 ```
 
 #### **4. Fetch.ai Agent Setup**
@@ -213,13 +242,13 @@ FETCH_AGENT_ADDRESS=agent1qg4zsqrdmyac8j6nc97nz99dxgauyaer2k8zw8mjcktnjrjh4jjkqf
 ASI_ONE_API_KEY=your_api_key_here
 
 # Frontend Configuration
-VITE_APP_TITLE=GreyGuard Trials
+VITE_APP_TITLE=TRIAGE A.I.
 VITE_APP_DESCRIPTION=Decentralized Clinical Trial Matching
 ```
 
 ### **Verification Steps**
 1. **Frontend**: Navigate to `http://localhost:8086/` and verify the application loads
-2. **ICP Canister**: Check canister status with `dfx canister status greyguard_trials`
+2. **ICP Canister**: Check canister status with `dfx canister status triage_ai`
 3. **Fetch.ai Agent**: Verify agent is running and responding to queries
 4. **Integration**: Test the complete flow from frontend to agent to canister
 
@@ -441,11 +470,11 @@ Our `dfx.json` is properly configured for HTTP outcalls between Fetch.ai agents 
 ```json
 {
   "canisters": {
-    "greyguard_trials": {
+    "triage_ai": {
       "type": "custom",
       "build": ["cargo build --target wasm32-unknown-unknown --release"],
-      "candid": "src/greyguard_trials.did",
-      "wasm": "target/wasm32-unknown-unknown/release/greyguard_trials.wasm"
+      "candid": "src/triage_ai.did",
+      "wasm": "target/wasm32-unknown-unknown/release/triage_ai.wasm"
     }
   }
 }

@@ -11,13 +11,33 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
-    // Temporarily disabled lovable-tagger to fix routing issues
-    // mode === 'development' &&
-    // componentTagger(),
-  ].filter(Boolean),
+    // Enable Lovable tagger for development and production
+    componentTagger({
+      // Lovable configuration
+      projectId: "medical-triage-ai-vision",
+      apiKey: process.env.LOVABLE_API_KEY,
+      // Enable component tagging
+      enableTagging: true,
+      // Enable analytics
+      enableAnalytics: true,
+    }),
+  ],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+    },
+  },
+  build: {
+    // Ensure proper build output for Lovable
+    outDir: "dist",
+    sourcemap: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          ui: ['@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu'],
+        },
+      },
     },
   },
 }));
