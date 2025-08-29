@@ -2,7 +2,7 @@
 
 ## Overview
 
-This guide provides step-by-step instructions for deploying your GreyGuard MCP (Model Context Protocol) System to Fetch.ai's Agentverse platform. The system includes a production-ready MCP server with weather data services and full ASI protocol integration.
+This guide provides step-by-step instructions for deploying your TRIAGE A.I. MCP (Model Context Protocol) System to Fetch.ai's Agentverse platform. The system includes a production-ready MCP server with weather data services and full ASI protocol integration.
 
 ## Prerequisites
 
@@ -14,7 +14,7 @@ This guide provides step-by-step instructions for deploying your GreyGuard MCP (
 ## Project Structure
 
 ```
-greyguard-mcp-system/
+triage-ai-mcp-system/
 ├── src/
 │   ├── services/
 │   │   ├── mcpServer.ts          # MCP server implementation
@@ -50,7 +50,7 @@ load_dotenv()
 
 # Configuration
 NWS_API_BASE = os.getenv("NWS_API_BASE", "https://api.weather.gov")
-USER_AGENT = os.getenv("USER_AGENT", "GreyGuard-MCP-Server/1.0")
+USER_AGENT = os.getenv("USER_AGENT", "TRIAGE_AI-MCP-Server/1.0")
 REQUEST_TIMEOUT = float(os.getenv("REQUEST_TIMEOUT", "30.0"))
 
 # Create FastMCP server
@@ -271,7 +271,7 @@ Create `agent/agentverse.yaml`:
 
 ```yaml
 version: 1
-name: greyguard-mcp-system
+name: triage-ai-mcp-system
 description: MCP server providing weather data through ASI protocol
 agents:
   - name: mcp-weather-agent
@@ -411,7 +411,7 @@ asyncio.run(test_weather())
 
 ### 5.2 Frontend Integration
 
-The MCP System component integrates seamlessly with your GreyGuard interface:
+The MCP System component integrates seamlessly with your TRIAGE A.I. interface:
 
 - Accessible via the "MCP System" tab
 - Weather data retrieval and display
@@ -487,4 +487,4 @@ Your MCP System is now ready for deployment! The system provides:
 - **Production Ready**: Security, monitoring, and scalability features
 - **User-Friendly Interface**: Modern React-based UI
 
-The system can be deployed to Agentverse and integrated with your GreyGuard application for a complete MCP-powered weather solution.
+The system can be deployed to Agentverse and integrated with your TRIAGE A.I. application for a complete MCP-powered weather solution.

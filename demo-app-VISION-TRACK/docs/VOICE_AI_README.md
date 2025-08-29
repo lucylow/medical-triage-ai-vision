@@ -1,4 +1,4 @@
-# 🎤 Voice AI Integration - GreyGuard Trials Quest
+# 🎤 Voice AI Integration - TRIAGE A.I. Quest
 
 ## 🌟 **Cutting-Edge Multimodal AI Interaction**
 
@@ -44,7 +44,7 @@ VITE_SUPABASE_ANON_KEY=your_supabase_anon_key_here
 
 # App Configuration
 VITE_APP_VERSION=1.0.0
-VITE_APP_NAME=GreyGuard Trials Quest
+VITE_APP_NAME=TRIAGE A.I. Quest
 ```
 
 ### **2. API Keys Setup**

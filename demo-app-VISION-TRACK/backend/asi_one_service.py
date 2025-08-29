@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-ASI:One Integration Service for GreyGuard Trials
+ASI:One Integration Service for TRIAGE A.I.
 Provides enhanced AI capabilities through ASI:One API integration
 """
 

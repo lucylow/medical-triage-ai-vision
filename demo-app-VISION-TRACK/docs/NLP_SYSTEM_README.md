@@ -1,8 +1,8 @@
-# Natural Language Prompt System for GreyGuard AI Agent
+# Natural Language Prompt System for TRIAGE A.I. Agent
 
 ## Overview
 
-The GreyGuard AI Agent now features an advanced Natural Language Processing (NLP) system that enables users to interact with the agent using natural, conversational language. This system provides intelligent intent recognition, context management, and customizable prompt templates.
+The TRIAGE A.I. Agent now features an advanced Natural Language Processing (NLP) system that enables users to interact with the agent using natural, conversational language. This system provides intelligent intent recognition, context management, and customizable prompt templates.
 
 ## Features
 
@@ -308,4 +308,4 @@ src/
 
 ---
 
-**Note**: This NLP system is designed to work entirely within the GreyGuard application. It does not require external API keys or internet connectivity for basic functionality. Advanced features may require additional configuration.
+**Note**: This NLP system is designed to work entirely within the TRIAGE A.I. application. It does not require external API keys or internet connectivity for basic functionality. Advanced features may require additional configuration.

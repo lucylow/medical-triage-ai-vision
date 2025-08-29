@@ -158,7 +158,7 @@ pub fn trigger_agent_analysis(patient_id: String) -> String {
 // ICP-specific features
 #[query]
 pub fn get_canister_info() -> String {
-    "GreyGuard Trials - ICP Canister v1.0.0".to_string()
+    "TRIAGE A.I. - ICP Canister v1.0.0".to_string()
 }
 
 #[query]

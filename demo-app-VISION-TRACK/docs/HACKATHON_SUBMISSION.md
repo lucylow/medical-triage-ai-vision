@@ -1,6 +1,6 @@
 # 🏆 ICP + Fetch.ai Hackathon Submission
 
-## 🧬 GreyGuard Trials - Decentralized Clinical Trial Matching
+## 🧬 TRIAGE A.I. - Decentralized Clinical Trial Matching
 
 **Team Size**: 5 members  
 **Project Type**: Full-stack Web3 application  
@@ -10,7 +10,7 @@
 
 ## 🎯 Project Summary
 
-GreyGuard Trials is a revolutionary decentralized platform that leverages **Fetch.ai agents** and **Internet Computer Protocol (ICP)** to democratize access to clinical trials through AI-powered matching and blockchain-based privacy protection.
+TRIAGE A.I. is a revolutionary decentralized platform that leverages **Fetch.ai agents** and **Internet Computer Protocol (ICP)** to democratize access to clinical trials through AI-powered matching and blockchain-based privacy protection.
 
 ### **Problem Statement**
 - **80% of clinical trials are delayed** due to patient recruitment issues
@@ -85,8 +85,8 @@ Patient Input → Patient Analysis Agent → Trial Matching Agent → Recommenda
 ## 🌐 ICP Features Used
 
 ### **Canisters**
-- **`greyguard_trials`**: Main Rust canister handling business logic
-- **`greyguard_trials_assets`**: Frontend asset hosting
+- **`triage_ai`**: Main Rust canister handling business logic
+- **`triage_ai_assets`**: Frontend asset hosting
 
 ### **ICP Capabilities**
 - **Decentralized Storage**: Patient and trial data stored on-chain
@@ -286,8 +286,8 @@ Patient Input → Patient Analysis Agent → Trial Matching Agent → Recommenda
 ## 🔗 Links & Resources
 
 - **Live Application**: [https://your-app.ic0.app](https://your-app.ic0.app)
-- **GitHub Repository**: [https://github.com/your-username/greyguard-trials](https://github.com/your-username/greyguard-trials)
-- **Documentation**: [https://docs.greyguard-trials.com](https://docs.greyguard-trials.com)
+- **GitHub Repository**: [https://github.com/your-username/triage-ai](https://github.com/your-username/triage-ai)
+- **Documentation**: [https://docs.triage-ai.com](https://docs.triage-ai.com)
 - **Demo Video**: [https://youtu.be/your-demo-video](https://youtu.be/your-demo-video)
 
 ---
@@ -343,7 +343,7 @@ Patient Input → Patient Analysis Agent → Trial Matching Agent → Recommenda
 
 ## 🎯 Conclusion
 
-GreyGuard Trials represents a **revolutionary approach** to clinical trial discovery that combines the best of **Fetch.ai's AI capabilities** with **ICP's decentralized infrastructure**. Our platform addresses a real-world healthcare problem while demonstrating cutting-edge Web3 technology integration.
+TRIAGE A.I. represents a **revolutionary approach** to clinical trial discovery that combines the best of **Fetch.ai's AI capabilities** with **ICP's decentralized infrastructure**. Our platform addresses a real-world healthcare problem while demonstrating cutting-edge Web3 technology integration.
 
 ### **Key Achievements**
 - ✅ **Complete ICP + Fetch.ai Integration**: Novel technology combination

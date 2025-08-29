@@ -2,7 +2,7 @@
 
 ## Overview
 
-The GreyGuard Trials application now implements a wallet-gated user experience where users must connect their Plug wallet (Internet Computer Protocol wallet) before accessing the main application functionality.
+The TRIAGE A.I. application now implements a wallet-gated user experience where users must connect their Plug wallet (Internet Computer Protocol wallet) before accessing the main application functionality.
 
 ## User Flow
 

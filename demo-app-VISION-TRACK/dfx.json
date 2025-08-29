@@ -1,14 +1,14 @@
 {
   "canisters": {
-    "greyguard_trials": {
+    "triage_ai": {
       "type": "rust",
-      "package": "greyguard_trials",
-      "candid": "src/greyguard_trials.did"
+      "package": "triage_ai",
+      "candid": "src/triage_ai.did"
     },
-    "greyguard_trials_assets": {
+    "triage_ai_assets": {
       "type": "assets",
       "source": ["dist"],
-      "dependencies": ["greyguard_trials"]
+      "dependencies": ["triage_ai"]
     }
   },
   "defaults": {

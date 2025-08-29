@@ -6,7 +6,7 @@ It includes patient management, trial management, and matching engine agents wit
 """
 
 __version__ = "1.0.0"
-__author__ = "GreyGuard Team"
+__author__ = "TRIAGE A.I. Team"
 __description__ = "Clinical Trial Matching uAgents with ASI Protocol Support"
 
 from .patient_agent import PatientAgent

@@ -17,7 +17,7 @@ This guide provides comprehensive instructions for deploying the Clinical Trial 
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd greyguard-trials-quest
+cd triage-ai-quest
 
 # Make deployment script executable
 chmod +x deploy_local.sh

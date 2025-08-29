@@ -1,4 +1,4 @@
-# 🎬 GreyGuard Trials - Demo Video Script
+# 🎬 TRIAGE A.I. - Demo Video Script
 
 ## 📋 **Video Structure Overview**
 **Total Duration**: 10 minutes maximum (as per hackathon requirements)
@@ -16,7 +16,7 @@ while researchers spend billions on inefficient recruitment. The current system
 has a critical gap - there's no privacy-preserving way to match patients with 
 trials without compromising sensitive medical data.
 
-Today, I'm excited to show you GreyGuard Trials - the world's first 
+Today, I'm excited to show you TRIAGE A.I. - the world's first 
 decentralized clinical trial matching platform that combines Fetch.ai 
 autonomous agents with Internet Computer Protocol blockchain to solve this 
 $50 billion problem."
@@ -93,7 +93,7 @@ generating cryptographic proofs without revealing sensitive information.
 
 ### **System Architecture Overview**
 ```
-"Let me give you a technical deep-dive into our architecture. GreyGuard 
+"Let me give you a technical deep-dive into our architecture. TRIAGE A.I. 
 Trials implements a sophisticated multi-layered system that seamlessly 
 integrates multiple technologies.
 
@@ -166,7 +166,7 @@ potential customers."
 
 ### **Scalability & Roadmap**
 ```
-"GreyGuard Trials is designed for global scale. Our architecture supports:
+"TRIAGE A.I. is designed for global scale. Our architecture supports:
 
 - **Phase 2**: Advanced AI algorithms and mobile applications
 - **Phase 3**: Global trial network and regulatory compliance tools
@@ -178,7 +178,7 @@ tomorrow's decentralized healthcare ecosystem."
 
 ### **Call to Action**
 ```
-"GreyGuard Trials represents a paradigm shift in clinical research. 
+"TRIAGE A.I. represents a paradigm shift in clinical research. 
 We're combining cutting-edge Web3 technologies to solve a real $50 
 billion problem that affects millions of patients worldwide.
 

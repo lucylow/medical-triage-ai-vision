@@ -25,8 +25,8 @@ import {
   Zap
 } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
-import { TriageLoadingIndicator } from './TriageLoadingIndicator';
-import { TriageVisualFeedback } from './TriageVisualFeedback';
+import TriageLoadingIndicator from './TriageLoadingIndicator';
+import TriageVisualFeedback from './TriageVisualFeedback';
 
 interface ChatMessage {
   id: string;

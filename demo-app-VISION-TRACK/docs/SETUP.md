@@ -1,4 +1,4 @@
-# 🚀 GreyGuard Trials - Complete Setup Guide
+# 🚀 TRIAGE A.I. - Complete Setup Guide
 
 ## 📋 **Prerequisites Installation**
 
@@ -142,11 +142,11 @@ git --version
 
 ### **1. Clone Repository**
 ```bash
-# Clone the GreyGuard Trials repository
-git clone https://github.com/lucylow/greyguard-trials-quest.git
+# Clone the TRIAGE A.I. repository
+git clone https://github.com/lucylow/triage-ai-quest.git
 
 # Navigate to project directory
-cd greyguard-trials-quest
+cd triage-ai-quest
 
 # Verify project structure
 ls -la
@@ -192,13 +192,13 @@ dfx ping
 dfx deploy
 
 # Verify deployment
-dfx canister status greyguard_trials
+dfx canister status triage_ai
 
 # Get canister ID
-dfx canister id greyguard_trials
+dfx canister id triage_ai
 
 # Test canister functionality
-dfx canister call greyguard_trials greet '("World")'
+dfx canister call triage_ai greet '("World")'
 ```
 
 #### **Configure Network Settings**
@@ -282,7 +282,7 @@ brew services start postgresql
 sudo systemctl start postgresql
 
 # Create database
-createdb greyguard_trials
+createdb triage_ai
 
 # Run migrations
 python3 manage.py migrate
@@ -318,7 +318,7 @@ cd ../..
 # Create .env file
 cat > .env << EOF
 # Frontend Configuration
-VITE_APP_TITLE=GreyGuard Trials
+VITE_APP_TITLE=TRIAGE A.I.
 VITE_APP_DESCRIPTION=Decentralized Clinical Trial Matching
 VITE_APP_VERSION=1.0.0
 
@@ -332,7 +332,7 @@ VITE_FETCH_AGENT_ADDRESS=agent1qg4zsqrdmyac8j6nc97nz99dxgauyaer2k8zw8mjcktnjrjh4
 VITE_ASI_ONE_API_KEY=your_api_key_here
 
 # Database Configuration
-DATABASE_URL=postgresql://username:password@localhost:5432/greyguard_trials
+DATABASE_URL=postgresql://username:password@localhost:5432/triage_ai
 REDIS_URL=redis://localhost:6379
 
 # Security Configuration
@@ -399,13 +399,13 @@ cd ../../ic
 dfx test
 
 # Test specific canister
-dfx test greyguard_trials
+dfx test triage_ai
 
 # Check canister status
-dfx canister status greyguard_trials
+dfx canister status triage_ai
 
 # View canister logs
-dfx logs greyguard_trials
+dfx logs triage_ai
 ```
 
 ### **3. Fetch.ai Agent Testing**
@@ -473,10 +473,10 @@ cd ../../ic
 dfx deploy --network mainnet
 
 # Verify deployment
-dfx canister status greyguard_trials --network mainnet
+dfx canister status triage_ai --network mainnet
 
 # Get mainnet canister ID
-dfx canister id greyguard_trials --network mainnet
+dfx canister id triage_ai --network mainnet
 ```
 
 ### **3. Fetch.ai Network Deployment**
@@ -533,7 +533,7 @@ dfx --version
 dfx upgrade
 
 # Clear canister state
-dfx canister uninstall-code greyguard_trials
+dfx canister uninstall-code triage_ai
 
 # Redeploy
 dfx deploy
@@ -575,13 +575,13 @@ npm run build
 ### **1. ICP Canister Monitoring**
 ```bash
 # Monitor canister cycles
-dfx canister status greyguard_trials
+dfx canister status triage_ai
 
 # Check canister memory usage
-dfx canister info greyguard_trials
+dfx canister info triage_ai
 
 # View canister logs
-dfx logs greyguard_trials --follow
+dfx logs triage_ai --follow
 ```
 
 ### **2. Frontend Performance**
@@ -637,11 +637,11 @@ python3 network_monitor.py
 - [TypeScript Documentation](https://www.typescriptlang.org)
 
 ### **Support Channels**
-- [GitHub Issues](https://github.com/lucylow/greyguard-trials-quest/issues)
+- [GitHub Issues](https://github.com/lucylow/triage-ai-quest/issues)
 - [Discord Community](https://discord.gg/fetchai)
 - [ICP Forum](https://forum.dfinity.org)
 - [Stack Overflow](https://stackoverflow.com)
 
 ---
 
-*This setup guide ensures that GreyGuard Trials can be properly configured and deployed for hackathon demonstration and judging. Follow each step carefully and verify functionality at each stage.*
+*This setup guide ensures that TRIAGE A.I. can be properly configured and deployed for hackathon demonstration and judging. Follow each step carefully and verify functionality at each stage.*

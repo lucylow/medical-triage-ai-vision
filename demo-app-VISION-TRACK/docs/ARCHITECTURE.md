@@ -1,8 +1,8 @@
-# 🏗️ GreyGuard Trials - Technical Architecture
+# 🏗️ TRIAGE A.I. - Technical Architecture
 
 ## System Overview
 
-GreyGuard Trials implements a sophisticated multi-layered architecture that seamlessly integrates Fetch.ai autonomous agents with Internet Computer Protocol (ICP) blockchain infrastructure, creating a privacy-preserving clinical trial matching platform.
+TRIAGE A.I. implements a sophisticated multi-layered architecture that seamlessly integrates Fetch.ai autonomous agents with Internet Computer Protocol (ICP) blockchain infrastructure, creating a privacy-preserving clinical trial matching platform.
 
 ## 🎯 **High-Level Architecture**
 
@@ -175,11 +175,11 @@ graph TB
 ```json
 {
   "canisters": {
-    "greyguard_trials": {
+    "triage_ai": {
       "type": "custom",
       "build": ["cargo build --target wasm32-unknown-unknown --release"],
-      "candid": "src/greyguard_trials.did",
-      "wasm": "target/wasm32-unknown-unknown/release/greyguard_trials.wasm",
+      "candid": "src/triage_ai.did",
+      "wasm": "target/wasm32-unknown-unknown/release/triage_ai.wasm",
       "http_outcalls": {
         "enabled": true,
         "max_response_bytes": 1048576,
@@ -303,4 +303,4 @@ dfx deploy --network mainnet
 
 ---
 
-*This architecture document demonstrates the technical sophistication and innovation of GreyGuard Trials, showcasing advanced Web3 technologies and healthcare-specific optimizations.*
+*This architecture document demonstrates the technical sophistication and innovation of TRIAGE A.I., showcasing advanced Web3 technologies and healthcare-specific optimizations.*

@@ -609,7 +609,7 @@ Our `dfx.json` is properly configured for HTTP outcalls between Fetch.ai agents 
 
 ## 🎉 **Conclusion**
 
-GreyGuard Trials represents a paradigm shift in clinical trial discovery, combining cutting-edge AI technology with decentralized blockchain infrastructure. Our platform demonstrates the power of Web3 technologies to solve real-world healthcare challenges while maintaining the highest standards of privacy and security.
+TRIAGE A.I. represents a paradigm shift in clinical trial discovery, combining cutting-edge AI technology with decentralized blockchain infrastructure. Our platform demonstrates the power of Web3 technologies to solve real-world healthcare challenges while maintaining the highest standards of privacy and security.
 
 The integration of Fetch.ai autonomous agents with Internet Computer Protocol creates a unique and powerful solution that addresses the critical gap in clinical trial matching. Our implementation of advanced cryptographic features, comprehensive testing, and professional documentation positions this project for success in the Nextgen Agents Hackathon and beyond.
 

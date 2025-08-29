@@ -2,7 +2,7 @@
 
 ## Overview
 
-This guide provides step-by-step instructions for deploying your GreyGuard ASI-compatible uAgent to Fetch.ai's Agentverse platform. The agent implements the Agent Standards Interface (ASI) protocol and integrates with the natural language processing capabilities we've built.
+This guide provides step-by-step instructions for deploying your TRIAGE A.I. ASI-compatible uAgent to Fetch.ai's Agentverse platform. The agent implements the Agent Standards Interface (ASI) protocol and integrates with the natural language processing capabilities we've built.
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ This guide provides step-by-step instructions for deploying your GreyGuard ASI-c
 ## Project Structure
 
 ```
-greyguard-asi-agent/
+triage-ai-asi-agent/
 ├── src/
 │   ├── services/
 │   │   ├── nlpService.ts          # NLP functionality
@@ -99,7 +99,7 @@ class AgentResponse(Model):
 
 # Configuration
 ASI_VERSION = "0.1"
-AGENT_NAME = "GreyGuard_ASI_Agent"
+AGENT_NAME = "TRIAGE_AI_ASI_Agent"
 SESSION_TIMEOUT = 30 * 60  # 30 minutes
 MAX_HISTORY = 50
 
@@ -432,7 +432,7 @@ async def handle_session_end(ctx: Context, sender: str, msg: SessionEnd):
 # Response Generation Functions
 def generate_welcome_response(intent: Dict, user_message: str) -> str:
     """Generate welcome message based on detected intent"""
-    welcome_message = f"Hello! I'm your GreyGuard AI agent with ASI protocol support. I can help you with:\n\n"
+    welcome_message = f"Hello! I'm your TRIAGE A.I. agent with ASI protocol support. I can help you with:\n\n"
     welcome_message += "• **Clinical Trial Matching** - Find trials using natural language\n"
     welcome_message += "• **Health Profile Management** - Secure, encrypted data handling\n"
     welcome_message += "• **Consent Control** - Manage trial participation permissions\n"
@@ -562,7 +562,7 @@ def generate_consent_management_response(intent: Dict, user_message: str) -> str
 def generate_privacy_response(intent: Dict, user_message: str) -> str:
     """Generate response for privacy inquiries"""
     response = "🛡️ **Privacy & Security Features**\n\n"
-    response += "GreyGuard uses cutting-edge technology to protect your health data:\n\n"
+    response += "TRIAGE A.I. uses cutting-edge technology to protect your health data:\n\n"
     
     response += "🔒 **End-to-End Encryption**\n"
     response += "• AES-256 encryption before data leaves your device\n"
@@ -689,7 +689,7 @@ Create `agent/agentverse.yaml`:
 
 ```yaml
 version: 1
-name: greyguard-asi-agent
+name: triage-ai-asi-agent
 description: ASI-compatible clinical trial matching agent with NLP capabilities
 agent:
   entry: main:agent
@@ -706,7 +706,7 @@ env:
   variables:
     ASI_VERSION: "0.1"
     NETWORK: "testnet"
-    AGENT_NAME: "GreyGuard_ASI_Agent"
+    AGENT_NAME: "TRIAGE_AI_ASI_Agent"
   
   secrets:
     - AGENT_SEED
@@ -937,7 +937,7 @@ export const ASI_AGENT_CONFIG = {
 
 ### 6.2 Test ASI Protocol Interface
 
-Navigate to the "ASI Protocol" tab in your GreyGuard app to test:
+Navigate to the "ASI Protocol" tab in your TRIAGE A.I. app to test:
 
 1. **Session Management**: Start, manage, and end ASI sessions
 2. **Protocol Compliance**: Verify ASI message format compliance

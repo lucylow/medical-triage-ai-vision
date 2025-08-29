@@ -1,8 +1,8 @@
-# 🚀 **GreyGuard Trials - Enhanced ASI:One Integration**
+# 🚀 **TRIAGE A.I. - Enhanced ASI:One Integration**
 
 ## **Overview**
 
-This enhanced system integrates **ASI:One** (Fetch.ai's advanced AI model) with GreyGuard Trials to provide cutting-edge clinical trial matching and medical assistance. The system features streaming responses, thought process visibility, intent analysis, and seamless fallback mechanisms.
+This enhanced system integrates **ASI:One** (Fetch.ai's advanced AI model) with TRIAGE A.I. to provide cutting-edge clinical trial matching and medical assistance. The system features streaming responses, thought process visibility, intent analysis, and seamless fallback mechanisms.
 
 ## **✨ Key Features**
 
@@ -358,6 +358,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Built with ❤️ by the GreyGuard Trials Team**
+**Built with ❤️ by the TRIAGE A.I. Team**
 
 *Empowering patients through AI-powered clinical trial discovery*

@@ -2,7 +2,7 @@
 
 ## Overview
 
-This guide provides step-by-step instructions for deploying your GreyGuard AI Image Agents to Fetch.ai's Agentverse platform. The system includes both an Image Generation Agent (using DALL-E 3) and an Image Analysis Agent (using Claude 3.5), both fully integrated with the ASI protocol.
+This guide provides step-by-step instructions for deploying your TRIAGE A.I. Image Agents to Fetch.ai's Agentverse platform. The system includes both an Image Generation Agent (using DALL-E 3) and an Image Analysis Agent (using Claude 3.5), both fully integrated with the ASI protocol.
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ This guide provides step-by-step instructions for deploying your GreyGuard AI Im
 ## Project Structure
 
 ```
-greyguard-image-agents/
+triage-ai-image-agents/
 ├── src/
 │   ├── services/
 │   │   ├── imageGenerationAgent.ts    # DALL-E 3 integration
@@ -74,7 +74,7 @@ from openai import OpenAI
 # Environment Configuration
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 AGENT_SEED = os.getenv("AGENT_SEED", "image-gen-secret-phrase-123")
-AGENT_NAME = os.getenv("AGENT_NAME", "GreyGuard_Image_Generator")
+AGENT_NAME = os.getenv("AGENT_NAME", "TRIAGE_AI_Image_Generator")
 ASI_VERSION = "0.1"
 
 if not OPENAI_API_KEY:
@@ -313,7 +313,7 @@ from uagents.storage import StorageAPI
 # Environment Configuration
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
 AGENT_SEED = os.getenv("AGENT_SEED", "image-analysis-secret-phrase-123")
-AGENT_NAME = os.getenv("AGENT_NAME", "GreyGuard_Image_Analyzer")
+AGENT_NAME = os.getenv("AGENT_NAME", "TRIAGE_AI_Image_Analyzer")
 ASI_VERSION = "0.1"
 MODEL_ENGINE = os.getenv("MODEL_ENGINE", "claude-3-5-sonnet-20240620")
 MAX_TOKENS = int(os.getenv("MAX_TOKENS", "4096"))
@@ -621,7 +621,7 @@ ANTHROPIC_API_KEY="sk-ant-your-anthropic-api-key-here"
 # Optional Configuration
 MODEL_ENGINE="claude-3-5-sonnet-20240620"
 MAX_TOKENS="4096"
-AGENT_NAME="GreyGuard_Image_Agents"
+AGENT_NAME="TRIAGE_AI_Image_Agents"
 ```
 
 ## Step 2: Frontend Configuration
@@ -684,7 +684,7 @@ Create `agent/agentverse.yaml`:
 
 ```yaml
 version: 1
-name: greyguard-image-agents
+name: triage-ai-image-agents
 description: AI-powered image generation and analysis agents with ASI protocol support
 agents:
   - name: image-generation-agent
@@ -997,7 +997,7 @@ async def collect_metrics(ctx: Context):
     await send_metrics_to_monitoring(metrics)
 ```
 
-## Step 8: Integration with GreyGuard
+## Step 8: Integration with TRIAGE A.I.
 
 ### 8.1 ASI Protocol Integration
 
@@ -1010,7 +1010,7 @@ The agents are already integrated with your ASI protocol system. They can:
 
 ### 8.2 Frontend Integration
 
-The `ImageAgents` component integrates seamlessly with your existing GreyGuard interface:
+The `ImageAgents` component integrates seamlessly with your existing TRIAGE A.I. interface:
 
 - Accessible via the "Image AI" tab
 - Consistent UI design with your existing components
@@ -1128,4 +1128,4 @@ Your AI Image Agents are now ready for deployment! The system provides:
 - **Production Ready**: Security, monitoring, and scalability features
 - **User-Friendly Interface**: Modern React-based UI
 
-The agents can be deployed to Agentverse and integrated with your GreyGuard application for a complete AI-powered image solution.
+The agents can be deployed to Agentverse and integrated with your TRIAGE A.I. application for a complete AI-powered image solution.
